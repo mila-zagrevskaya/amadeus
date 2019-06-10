@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?fc5bra');
+  src:  url('../fonts/icomoon.eot?fc5bra#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?fc5bra') format('truetype'),
+    url('../fonts/icomoon.woff?fc5bra') format('woff'),
+    url('../fonts/icomoon.svg?fc5bra#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calendar:before {
+  content: "\f073";
+
+}
+.icon-angle-double-down:after {
+  font-size: 20px;
+  content: "\f103";
+  position: absolute;
+  top: 100%;
+  right: 40%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+}
+.icon-angle-double-down:hover:after {
+  color: #ff6633;
+}
+.icon-tripadvisor:before {
+  content: "\f262";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-users:before {
+  content: "\e972";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}

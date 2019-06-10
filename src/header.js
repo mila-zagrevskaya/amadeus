@@ -4,7 +4,7 @@ import logo from "./images/logo.png";
 
 const liArr = [
 	{ path: "/", id: 1, text: "Main" },
-	{ path: "/menu",  id: 2,  text: "Menu" },
+	{ path: "/menu",  id: 2,  text: "Menu"  },
 	{ path: "/About", id: 3,  text: "About" },
 	{ path: "/Events", id: 4, text: "Events"  },
 	{ path: "/Reservations", id: 5, text: "Reservations" },
@@ -15,7 +15,9 @@ export default () => (
 	<header className="header">
 		<div className="header__left-wrapper">
 			<div className="header__logo-box">
-				<img src= {logo} alt="logo"/>
+				<Link to = "#">
+					<img src= {logo} className = ".header__logo" alt="logo"/>
+				</Link>
 			</div>
 			<nav className="header__nav">
 				<ul className="header__list">

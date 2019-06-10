@@ -1,3 +1,8 @@
 import React from "react";
 
-export default ({ text, ...rest }) => <button {...rest}>{text}</button>;
+const buttonArr = [
+    {text: "See menu"},
+    {text: "Find a table"},
+]
+export default ({ text, ...rest }) => 
+<button {...rest} className = "title-button">{text}</button>;
