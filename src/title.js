@@ -10,13 +10,12 @@ export default () => (
             We offer mouth watering <Link to="#" className = "cuisine">French cuisine</Link>
         </p>
         <div className="button-box">
-            <Button className="header__log-in" text="See menu" onClick="#" />
-            <Button className="header__log-in" text="Find a table" onClick="#" />
+            <Button className="title-button" text="See menu" onClick="#" />
+            <Button className="title-button" text="Find a table" onClick="#" />
         </div>
         <div className="scroll-box">
             <p className="icon-angle-double-down">Scroll down for details </p>
         </div>
-        
     </div>
    
 )
