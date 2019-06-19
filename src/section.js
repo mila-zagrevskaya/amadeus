@@ -14,5 +14,13 @@ export default ({ text, title, parag1, span, parag2, btnText, bigImg, ...rest })
             <Button className="title-button more" text={btnText} onClick= "#"/>
         </div>
         <img src = {bigImg} className = "big-img" alt="photo"/>
+        {/* <div className = " pictures-box">
+            <img src = {bigImg} className = "pict" alt="photo"/>
+            <img src = {bigImg} className = "pict" alt="photo"/>
+            <img src = {bigImg} className = "pict" alt="photo"/>
+        </div> */}
+        <div className = "more-information">
+            {text}
+        </div>   
     </div>
 )

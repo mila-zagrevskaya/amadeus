@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Header from "./header";
 import Title from "./title"
 import About from "./section"
+import Menu from "./section"
 
 export default ({ header = true, children, footer }) => {
 	return (
@@ -21,10 +22,21 @@ export default ({ header = true, children, footer }) => {
 						parag2 = "Quisque orci neque, euismod vitae turpis quis, accumsan iaculis velit. Nulla lacinia facilisis velit eget interdum."
 						btnText = "Read more"
 						bigImg = "./images/glassOfWine.jpg"
+
 					></About>
 				</div>				
 			</div>		
-
+			<div className = "section-menu">
+				<div className="wrapper">
+					<Menu title = "Tasteful French Cuisine"
+						parag1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis lorem nec enim tempus viverra condimentum eget dui.  Quisque ac ornare orci lacinia facilisis velit "
+						span = "eget interdum ."
+						parag2 = "Quisque orci neque, euismod vitae turpis quis, accumsan iaculis velit. Nulla lacinia facilisis velit eget interdum."
+						btnText = "view menu"
+						bigImg = "././images/beef-steak.jpg"
+					></Menu>
+				</div>				
+			</div>
 
 				
 			<div className="main">{children}</div>

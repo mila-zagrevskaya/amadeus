@@ -162,13 +162,17 @@ h1{
 	outline: none;
 }
 
-// ________about-section  start
-.section-wrap {
+// ________section  start
+.section-wrap,
+.section-menu {
 	background-color: #f7f7f7;
 	padding-bottom: 25px;
 	.wrapper {
 		padding-top: 120px;
 	}
+}
+.section-menu {
+	background-color: #fff;
 }
 .section {
 	display: flex;
@@ -206,6 +210,7 @@ h1{
 		}
 	}
 }
+
 h2 {
 	font-family: 'PT Serif', serif;
 	display: inline-block;
