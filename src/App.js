@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 
 import SomeBlock from "./components/hideBlock";
 import Main from "./containers/main";
-import About from "./containers/About-section"
+import About from "./containers/About-section";
 import ItemPage from "./components/ItemPage";
 
 export default class App extends Component {
@@ -12,7 +12,8 @@ export default class App extends Component {
 			<>
 				<Switch>
 					<Route exact path="/" component={Main} />
-					<Route path="/About" component={About} />
+					<Route exact path="/About" component={About} /> 
+					<Route path="/item/:id" component={ItemPage} />
 					<Route exact path="/profile" component={SomeBlock} />
 					<Route
 						exact

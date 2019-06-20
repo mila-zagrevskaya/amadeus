@@ -3,12 +3,12 @@ import React, { Component } from "react";
 import Header from "../components/header";
 import Title from "../components/title"
 import About from "./About-section"
-import Menu from "./About-section"
+import Menu from "./menu-section"
 
 export default ({ header = true, children, footer }) => {
 	return (
 		<div className="container">
-			<div className="case">
+			<div className="case" id = "main">
 				{header && <Header />}	
 				<div className = "wrapper">
 					<Title></Title>
@@ -33,7 +33,7 @@ export default ({ header = true, children, footer }) => {
 						span = "eget interdum ."
 						parag2 = "Quisque orci neque, euismod vitae turpis quis, accumsan iaculis velit. Nulla lacinia facilisis velit eget interdum."
 						btnText = "view menu"
-						bigImg = "././images/beef-steak.jpg"
+						bigImg = "./images/beef-steak.jpg"
 					></Menu>
 				</div>				
 			</div>

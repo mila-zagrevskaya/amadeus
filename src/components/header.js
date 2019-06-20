@@ -14,7 +14,7 @@ const liArr = [
 export default () => (
 	<header className="header">
 		<div className="header__logo-box">
-				<Link to = "#">
+				<Link to = "/">
 					<img src= {logo} className = ".header__logo" alt="logo"/>
 				</Link>
 			</div>
