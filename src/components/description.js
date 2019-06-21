@@ -3,6 +3,10 @@ import React from "react";
 import Button from "../components/button"
 
 
+
+
+
+
 export default ({ text, title, parag1, span, parag2, btnText, ...rest }) => (
     <div className="text-about">
         <h2> {title}</h2>

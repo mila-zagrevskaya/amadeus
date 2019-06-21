@@ -3,18 +3,15 @@ import React from "react";
 import Description from "../components/description"
 
 const pictures = [
-    {
-        src: "./images/Eric-McGregor-flickr.jpg",
+    {   src: "./images/Eric-McGregor-flickr.jpg",
         className: "big-pict",
         id: 1
     },
-    {
-        src: "./images/restorauntKitchen.jpg",
+    {   src: "./images/restorauntKitchen.jpg",
         className: "pict",
         id: 2
     },
-    {
-        src: "./images/beef-steak.jpg",
+    {   src: "./images/beef-steak.jpg",
         className: "pict",
         id: 3
     }

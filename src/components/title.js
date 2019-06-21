@@ -17,5 +17,4 @@ export default () => (
             <p className="icon-angle-double-down">Scroll down for details </p>
         </div>
     </div>
-   
 )

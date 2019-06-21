@@ -1,0 +1,174 @@
+{
+    "menu" : {
+        "Appetizers and salads": [
+            {
+                "name": "Herring on a potato",
+                "description": "weight output, g. 120/65",
+                "price": 85
+            },
+            {
+                "name": "Beef tartare with fries",
+                "description": "weight output, g. 150/60/10",
+                "price": 205
+            },
+            {
+                "name": "Ceviche of tuna and scallop",
+                "description": "weight output, g. 60/60",
+                "price": 360
+            },
+            {
+                "name": "Salmon Carpaccio",
+                "description": "weight output, g. 90/45",
+                "price": 190
+            },
+            {
+                "name": "Terrine of foie gras with caramelized onions and raisins",
+                "description": "weight output, g 80/40",
+                "price": 195
+            },
+            {
+                "name": "Сheese plate",
+                "description": "weight output, g 150/100/20",
+                "price": 190
+            },
+            {
+                "name": "Trio of fish tartare salmon, tuna, dorado with Teriyaki sauce",
+                "description": "weight output, g 120/25",
+                "price": 230
+            },
+            {
+                "name": "Tuna tartare with eggplant caviar",
+                "description": "weight output, g 60/80",
+                "price": 215
+            },
+            {
+                "name": "Beef carpaccio with Pesto sauce",
+                "description": "weight output, g 90/40",
+                "price": 190
+            }
+        ],
+        "Hot Appetizers": [
+            {
+                "name": "Duck burger withfoie gras and french fries",
+                "description": "weight output, g. 280/100/30",
+                "price": 250
+            },
+            {
+                "name": "Frog legs",
+                "description": "weight output, g. 150/150",
+                "price": 285
+            },
+            {
+                "name": "Millefeuille of foie gras with apples",
+                "description": "weight output,g 160/20",
+                "price": 290
+            },
+            {
+                "name": "Pie with foie gras and ceps",
+                "description": "weight output, g 250/20",
+                "price": 250
+            },
+            {
+                "name": "Seafood saute with Beurre Blanc sauce",
+                "description": "weight output, g 220/30",
+                "price": 750
+            }
+        ],
+        "Soups": [
+            {
+                "name": "Okroshka with salmon",
+                "description": "weight output, g. 300",
+                "price": 110
+            },
+            {
+                "name": "Okroshka with a tongue",
+                "description": "weight output, g. 300",
+                "price": 95
+            },
+            {
+                "name": "Gaspacho",
+                "description": "weight output, g. 150/25",
+                "price": 95
+            },
+            {
+                "name": "Beetroot soup with pike perch",
+                "description": "weight output, g. 250/50",
+                "price": 85
+            },
+            {
+                "name": "Salmon, halibut and pike-perch fish soup",
+                "description": "weight output, g.300",
+                "price": 150
+            },
+            {
+                "name": "Pumpkin cream soup with shrimp and parmesan",
+                "description": "weight output, g 300",
+                "price": 125
+            },
+            {
+                "name": "Thai soup with shrimp",
+                "description": "weight output,g 300",
+                "price": 210
+            },
+            {
+                "name": "Duck consommé",
+                "description": "weight output, g 350",
+                "price": 100
+            },
+            {
+                "name": "Wild mushrooms cream soup",
+                "description": "weight output, g 320",
+                "price": 120
+            }
+        ],
+        "Fish and Seafood" : [
+            {
+                "name": "Steamed or grilled pike perch with carrot-ginger puree",
+                "description": "weight output, g. 150/130/30",
+                "price": 255
+            },
+            {
+                "name": "Halibut on Spinach",
+                "description": "weight output,g 250",
+                "price": 550
+            },
+            {
+                "name": "Dorado (to select) in salt, steamed, grilled",
+                "description": "weight output, g 100",
+                "price": 185
+            },
+            {
+                "name": "Grilled salmon with white wine sauce",
+                "description": "weight output, g 170/50",
+                "price": 310
+            },
+            {
+                "name": "Fish composition of dorado, squid and scallops with ratatouille",
+                "description": "weight output, g 210/80/40",
+                "price": 740
+            }
+        ],
+        "Desserts" : [
+            {
+                "name": "Berry gratin",
+                "description": "weight output, g 200/40/25",
+                "price": 135
+            },
+            {
+                "name": "Ice-cream, sorbets",
+                "description": "weight output, g 40",
+                "price": 50
+            },
+            {
+                "name": "Apple pie with vanilla ice-cream",
+                "description": "weight output, g 135/40/15",
+                "price": 130
+            },
+            {
+                "name": "Chocolate fondant with pistachio cream and vanilla ice-cream",
+                "description": "weight output, g 120/120",
+                "price": 150
+            }
+        ]
+    }
+}

@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 import Header from "../components/header";
-import Title from "../components/title"
-import About from "./About-section"
-import Menu from "./menu-section"
+import Title from "../components/title";
+import About from "./About-section";
+import Menu from "./menu-section";
+import Reserve from "./reserve"
+
 
 export default ({ header = true, children, footer }) => {
 	return (
@@ -37,8 +39,7 @@ export default ({ header = true, children, footer }) => {
 					></Menu>
 				</div>				
 			</div>
-
-				
+			<Reserve></Reserve>
 			<div className="main">{children}</div>
 
 				{footer && <div>I am footer</div>}
