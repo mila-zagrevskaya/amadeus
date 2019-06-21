@@ -276,9 +276,24 @@ h2 {
 	
 }
 
-.cont {
-	width: 33%;
-	background-color: #fff;
+.reserve-wrap {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	.cont {
+		width: 50%;
+		background-color: #fff;
+		text-align: center;
+		padding: 75px 60px 100px;
+		margin: 115px 15px 10px;
+	}
+}
+.input-box {
+	display: flex;
+	flex-direction: column;
+
+	&__input {
+	}
 }
 
 
