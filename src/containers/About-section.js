@@ -17,15 +17,15 @@ const pictures = [
     }
 ]
 
-export default ({ text, title, parag1, span, parag2, btnText, bigImg, ...rest }) => (
+export default ({ text, title, parag1, span, parag2, btnText, bigimg, ...rest }) => (
     <div className="section">
         <div className = "top-box"> 
             <Description text = {text}  title = {title} parag1 = {parag1}  span = {span} parag2= {parag2} btnText = {btnText}></Description>
-            <img src = {bigImg} className = "big-img" alt="photo"/>
+            <img src = {bigimg} className = "big-img" alt="Amadeus"/>
         </div>    
         <div className = "pictures-box">
             {pictures.map(el => (
-                 <img src = {el.src} className = {el.className} alt="photo" key = {el.id}/>
+                 <img src = {el.src} className = {el.className} alt="Amadeus" key = {el.id}/>
             ))}
             
         </div>

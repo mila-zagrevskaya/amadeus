@@ -1,8 +1,10 @@
 import React from "react";
 
-export default ({ id, label, type = "text", ...rest }) => (
+export default ({ id, label, type = "text", icon, ...rest }) => (
 	<label htmlFor={id} className="input-box">
 		{label}
-		<input className="input-box__input" id={id} type={type} {...rest} />
+		<input className= {icon}  id={id} type={type} {...rest} >
+			{/* <span className = {icon}></span> */}
+		</input>
 	</label>
 );

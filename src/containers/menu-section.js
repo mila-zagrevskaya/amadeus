@@ -25,7 +25,7 @@ export default ({ text, title, parag1, span, parag2, btnText, ...rest }) => (
         <div className = "top-box menu-box"> 
             <div className = "menu-pictures-box">
                 {pictures.map(el => (
-                    <img src = {el.src} className = {el.className} alt="photo" key = {el.id}/>
+                    <img src = {el.src} className = {el.className} alt="Amadeus" key = {el.id}/>
                 ))}
              </div>
             <Description text = {text}  title = {title} parag1 = {parag1}  span = {span} parag2= {parag2} btnText = {btnText}></Description>

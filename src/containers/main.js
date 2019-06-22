@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 // import { Link } from "react-router-dom";
 import Header from "../components/header";
 import Title from "../components/title";
 import About from "./About-section";
 import Menu from "./menu-section";
 import Reserve from "./reserve"
+
 
 
 export default () => {
@@ -24,7 +25,7 @@ export default () => {
 							span="eget interdum ."
 							parag2="Quisque orci neque, euismod vitae turpis quis, accumsan iaculis velit. Nulla lacinia facilisis velit eget interdum."
 							btnText="Read more"
-							bigImg="./images/glassOfWine.jpg"
+							bigimg="./images/glassOfWine.jpg"
 
 						></About>
 					</div>
@@ -49,5 +50,6 @@ export default () => {
 
 			{/* {footer && <div>I am footer</div>} */}
 		</div>
+		
 	);
 };
