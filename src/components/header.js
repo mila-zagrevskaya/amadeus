@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "./images/logo.png";
+import logo from "../assets/img/logo.png";
 
 const liArr = [
 	{ path: "/", id: 1, text: "Main" },
@@ -14,7 +14,7 @@ const liArr = [
 export default () => (
 	<header className="header">
 		<div className="header__logo-box">
-				<Link to = "#">
+				<Link to = "/">
 					<img src= {logo} className = ".header__logo" alt="logo"/>
 				</Link>
 			</div>

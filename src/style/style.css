@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?fc5bra');
-  src:  url('../fonts/icomoon.eot?fc5bra#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?fc5bra') format('truetype'),
-    url('../fonts/icomoon.woff?fc5bra') format('woff'),
-    url('../fonts/icomoon.svg?fc5bra#icomoon') format('svg');
+  src:  url('../assets/fonts/icomoon.eot?fc5bra');
+  src:  url('../assets/fonts/icomoon.eot?fc5bra#iefix') format('embedded-opentype'),
+    url('../assets/fonts/icomoon.ttf?fc5bra') format('truetype'),
+    url('../assets/fonts/icomoon.woff?fc5bra') format('woff'),
+    url('../assets/fonts/icomoon.svg?fc5bra#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,23 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-calendar:before {
-  content: "\f073";
 
-}
 .icon-angle-double-down:after {
-  font-size: 20px;
   content: "\f103";
-  position: absolute;
+  font-size: 20px;
   top: 100%;
-  right: 40%;
-  color: #fff;
-  width: 20px;
-  height: 20px;
+  right: 45%;
   margin-top: 15px;
+  color: #fff;
 }
 .icon-angle-double-down:hover:after {
   color: #ff6633;
+}
+
+
+
+.icon-calendar:before {
+  content: "\f073";
+
 }
 .icon-tripadvisor:before {
   content: "\f262";
@@ -62,4 +63,30 @@
 }
 .icon-twitter:before {
   content: "\ea96";
+}
+
+
+
+.icon-angle-double-down:after,
+.icon-user:before,
+.icon-calendar:before,
+.icon-clock:before,
+.icon-users:before, 
+.icon-tripadvisor:before,
+.icon-facebook:before,
+.icon-instagram:before,
+.icon-twitter:before {
+    position: absolute;
+}
+
+.icon-user:before,
+.icon-calendar:before,
+.icon-clock:before,
+.icon-users:before {
+  color: #222222;
+  font-size: 30px;
+  top: 30%;
+  right: 20px;
+  width: 30px;
+  height: 30px;
 }
