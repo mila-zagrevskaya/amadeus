@@ -18,9 +18,9 @@ const pictures = [
     }
 ]
 
-export default ({ text, title, parag1, span, parag2, btnText, bigimg, ...rest }) => (
+export default ({ id, text, title, parag1, span, parag2, btnText, bigimg, ...rest }) => (
 
-    <div className="section">
+    <div className="section" id = {id}>
         <div className = "top-box"> 
             <Description text = {text}  title = {title} parag1 = {parag1}  span = {span} parag2= {parag2} btnText = {btnText}></Description>
             <img src = {bigimg} className = "big-img" alt="Amadeus"/>

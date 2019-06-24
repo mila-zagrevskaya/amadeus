@@ -20,8 +20,8 @@ const pictures = [
     },
 ]
 
-export default ({ text, title, parag1, span, parag2, btnText, ...rest }) => (
-    <div className="section">
+export default ({ id, text, title, parag1, span, parag2, btnText, ...rest }) => (
+    <div className="section" id = {id}>
         <div className = "top-box menu-box"> 
             <div className = "menu-pictures-box">
                 {pictures.map(el => (

@@ -3,7 +3,6 @@ import React from "react";
 import Button from "./button";
 import Input from "./input";
 
-// import Input from "./registration"
 
 
 
@@ -88,6 +87,9 @@ export default class Form extends React.Component {
 					onChange={this.handleChangePeople}
 					id="people"
 					name="people"
+					type = "number"
+					max = "20"
+					min = "1"
 					label= "How many people *"
 					// icon = "icon-users"
 				/>

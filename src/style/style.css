@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
   font-family: 'icomoon';
   src:  url('../assets/fonts/icomoon.eot?fc5bra');
@@ -46,6 +45,8 @@
 }
 .icon-tripadvisor:before {
   content: "\f262";
+  left: 150px;
+
 }
 .icon-clock:before {
   content: "\e94e";
@@ -58,12 +59,15 @@
 }
 .icon-facebook:before {
   content: "\ea90";
+  left: 0;
 }
 .icon-instagram:before {
   content: "\ea92";
+  left: 100px;
 }
 .icon-twitter:before {
   content: "\ea96";
+  left: 50px;
 }
 
 
@@ -84,101 +88,10 @@
 .icon-calendar:before,
 .icon-clock:before,
 .icon-users:before {
-  color: #222222;
-  font-size: 30px;
-  top: 30%;
-  right: 20px;
-  width: 30px;
-  height: 30px;
+    color: #222222;
+    font-size: 30px;
+    top: 30%;
+    right: 20px;
+    width: 30px;
+    height: 30px;
 }
-=======
-@font-face {
-  font-family: 'icomoon';
-  src:  url('../assets/fonts/icomoon.eot?fc5bra');
-  src:  url('../assets/fonts/icomoon.eot?fc5bra#iefix') format('embedded-opentype'),
-    url('../assets/fonts/icomoon.ttf?fc5bra') format('truetype'),
-    url('../assets/fonts/icomoon.woff?fc5bra') format('woff'),
-    url('../assets/fonts/icomoon.svg?fc5bra#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
-
-.icon-calendar:before {
-  content: "\f073";
-
-}
-.icon-angle-double-down:after {
-  content: "\f103";
-  font-size: 20px;
-  top: 100%;
-  right: 40%;
-  margin-top: 15px;
-  color: #fff;
-}
-.icon-angle-double-down:hover:after {
-  color: #ff6633;
-}
-.icon-tripadvisor:before {
-  content: "\f262";
-}
-.icon-clock:before {
-  content: "\e94e";
-}
-.icon-user:before {
-  content: "\e971";
-}
-.icon-users:before {
-  content: "\e972";
-}
-.icon-facebook:before {
-  content: "\ea90";
-}
-.icon-instagram:before {
-  content: "\ea92";
-}
-.icon-twitter:before {
-  content: "\ea96";
-}
-
-
-
-.icon-angle-double-down:after,
-.icon-user:before,
-.icon-calendar:before,
-.icon-clock:before,
-.icon-users:before, 
-.icon-tripadvisor:before,
-.icon-facebook:before,
-.icon-instagram:before,
-.icon-twitter:before {
-    position: absolute;
-}
-.icon-user:before,
-.icon-calendar:before,
-.icon-clock:before,
-.icon-users:before {
-  color: #222222;
-  font-size: 30px;
-  top: 30%;
-  right: 20px;
-  width: 30px;
-  height: 30px;
-}
->>>>>>> e836e320e563f7257c11966a2fe6a7095e1889c0
