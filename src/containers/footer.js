@@ -31,9 +31,12 @@ export default class Footer extends React.Component {
                     <h5>Visit us</h5>
                     <p>Nec sagittis sem nibh id elit. Duis sed odio sit amet nibh. <span> View on the map.</span></p>
                     <h5>Connect with us</h5>
-                    {socialLinks.map (el => (
-                        <a href={el.src} key={el.id}><span className = {el.className}></span></a>
-                    ))}
+                    <div className="social-box">
+                        {socialLinks.map (el => (
+                            <a href={el.src} key={el.id}><span className = {el.className}></span></a>
+                        ))}
+                    </div>
+                   
 
 
                     {/* <span className = "icon-facebook"></span>

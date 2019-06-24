@@ -316,9 +316,9 @@ h4 {
 		position: relative;
 		margin: 10px 0;
 		padding: 20px;
+		width: 100%;
 		background-color: #f7f7f7;
 		border: 1px solid $footer-color;
-		// border: 1px solid $hover-color;
 		border-radius: 3px;
 		
 	}
@@ -328,18 +328,28 @@ h4 {
 	& input:hover {
 		background-color: #fff;
 	}
+	input[type=date]::-webkit-inner-spin-button,
+	input[type=time]::-webkit-inner-spin-button,
+	input[type=number]::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		display: none;
+	}
 }
 
 footer {
 	background-color: $footer-color;
-	padding: 60px 5px;
+	padding: 60px 25px;
 	color: $header-color;
-
 	.wrapper {
 		display: flex;
 		justify-content: space-between;
-		
-	
+		@media (max-width: 768px) {
+			flex-direction: column;	
+			align-items: center;
+			.logo-box {
+				display: none;
+			}
+		}
 		.contacts {
 			position: relative;
 		}
@@ -367,7 +377,7 @@ footer {
 	.item {
 		padding: 0;
 		&:not(:last-child) {
-			margin-right: 25px;
+			// margin-right: 25px;
 			@media (max-width: 768px) {
 				// margin-right: 10px;	
 			}
@@ -393,11 +403,16 @@ footer  {
 	.footer-nav,
 	.contacts {
 		width: 25%;
+		@media (max-width: 768px) {
+			align-self: center;
+			width: 50%;
+		}
 	}
 	span {
 		color:  $header-color;
+		&:hover {
+			color: $hover-color;
+		}
 	}
 }
-
-
 
