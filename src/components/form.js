@@ -50,7 +50,8 @@ export default class Form extends React.Component {
     
       validate(state) {
         return {
-          valid: state.props === state.value
+		  valid: state.props === state.value
+		//   valid: state.value.length < 2
         }
       }
     
@@ -67,7 +68,7 @@ export default class Form extends React.Component {
 				<Input value={this.state.date}
 					onChange={this.handleChangeDate}
 					type = "date"
-					required
+					// required
 					id="date"
 					name="date"
 					label="Date *"
@@ -86,6 +87,7 @@ export default class Form extends React.Component {
 				<Input value={this.state.people}
 					onChange={this.handleChangePeople}
 					id="people"
+		
 					name="people"
 					type = "number"
 					max = "20"
@@ -99,7 +101,8 @@ export default class Form extends React.Component {
 					name="commensals"
 					label= "Commensals "
 				/>
-				<Button type="submit" text="Find a table" className ="title-button form-btn" />
+				<Button type="submit" text="Find a table" className ="title-button form-btn" 
+				disabled = { ( this.state.name.length && this.state.date.length && this.state.time.length && this.state.people.length ) === 0 }/>
 			</form>
         )
       }

@@ -33,16 +33,9 @@ export default class Footer extends React.Component {
                     <h5>Connect with us</h5>
                     <div className="social-box">
                         {socialLinks.map (el => (
-                            <a href={el.src} key={el.id}><span className = {el.className}></span></a>
+                            <a href={el.src} key={el.id}><span className = {el.className} ></span></a>
                         ))}
                     </div>
-                   
-
-
-                    {/* <span className = "icon-facebook"></span>
-                    <span className = "icon-twitter"></span>
-                    <span className = "icon-instagram"></span>
-                    <span className = "icon-tripadvisor"></span> */}
                 </div>
             </div>
         </footer>
@@ -50,3 +43,5 @@ export default class Footer extends React.Component {
     );
   }
 }
+
+//  target = "_blank" rel="nofollow" 

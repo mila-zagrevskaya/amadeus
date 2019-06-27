@@ -18,7 +18,7 @@ export default () => (
 				<li className="item" key={el.id}>
 					<Link to={el.path}>{el.text}</Link>
 				</li>
-			))}
+			) ) }
 		</ul>
 	</nav>
 );
