@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Button from "./button";
 // import Menu from "../containers/menu-section"
 
-export default () => (
+export default (prop) => (
     <div className="title-box">
         <h1>Welcome to Amadeus</h1>
         <p className="welcom-title">

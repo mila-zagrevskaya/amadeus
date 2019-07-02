@@ -57,43 +57,39 @@ export default class Form extends React.Component {
     
       render(){
         return (
-			<form>
-				<Input value={this.state.name}
-					onChange={this.handleChangeName}
+			<form  >
+				<Input value={ this.state.name }
+					onChange={ this.handleChangeName }
 					id="name"
 					name="name"
 					label="Name *"
-					// icon = "icon-user"
 				/>
 				<Input value={this.state.date}
 					onChange={this.handleChangeDate}
 					type = "date"
+					min = { new Date ( ).toLocaleDateString ( ) }
 					// required
-					id="date"
-					name="date"
-					label="Date *"
-					// icon = "icon-calendar"
+					id = "date"
+					name = "date"
+					label = "Date *"
 				/>
 				<Input value={this.state.time}
 					onChange={this.handleChangeTime}
 					type = "time"
 					min = "10:00"
 					max = "21:00"
-					id="time"
-					name="time"
-					label="Time *"
-					// icon = "icon-clock"
+					id = "time"
+					name = "time"
+					label = "Time *"
 				/>
 				<Input value={this.state.people}
 					onChange={this.handleChangePeople}
 					id="people"
-		
 					name="people"
 					type = "number"
 					max = "20"
 					min = "1"
 					label= "How many people *"
-					// icon = "icon-users"
 				/>
 				<Input value={this.state.comments}
 					onChange={this.handleChangeComments}

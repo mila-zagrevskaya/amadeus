@@ -222,7 +222,7 @@ h1{
 		margin-right: 30px;
 		@media (max-width: 768px) {
 			width: 90%;	
-			margin: 40px 2px 0;
+			margin: 40px auto 0;
 		}
 		p {
 			font-family: 'PT Sans', sans-serif;	
@@ -280,6 +280,7 @@ h2 {
 h4 {
 	font-size: 22px;
 	line-height: 24px;
+	margin-bottom: 40px;
 }
 .reserve-wrap {
 	display: flex;
@@ -306,6 +307,9 @@ h4 {
 		margin: 35px 0 50px;
 		&:hover {
 			color: $hover-color;
+		}
+		&:disabled {
+			background-color: #22222299;
 		}
 	}
 }
@@ -336,6 +340,70 @@ h4 {
 		display: none;
 	}
 }
+
+// _____________________
+.poster {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 50px;
+
+	.poster-img {
+		margin: 2px;
+	}
+	.text-poster-block {
+		margin: 2px 2px 2px 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		text-align: left;
+	}
+	h6 {
+		margin: 0;
+		font-family: 'PT Serif', serif;
+		margin-bottom: 10px;
+		font-size: 18px;
+		line-height: 20px;
+		font-weight: bold;
+		color: $hover-color;
+	}
+	p {
+		font-size: 14px;
+		line-height: 20px;
+
+	}
+	.icon-calendar ,
+	.icon-clock	{
+		position: relative;
+		padding-left: 20px;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	.icon-clock	 {
+		margin-left: 25px;
+	}
+	.read-more {
+		text-decoration: none;
+		color: $hover-color;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// _____________________
 
 footer {
 	background-color: $footer-color;

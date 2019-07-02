@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+// import { Link, Switch, Route } from "react-router-dom";
 import Description from "../components/description"
 
 const pictures = [

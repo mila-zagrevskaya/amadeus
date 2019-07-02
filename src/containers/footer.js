@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Scrollchor from 'react-scrollchor';
 import logo from "../assets/img/logo.png";
 import Navigation from "../components/navigation";
+
 
 const socialLinks = [
     { src: "https://www.facebook.com",  id: 1,  className: "icon-facebook" },
@@ -16,12 +17,12 @@ export default class Footer extends React.Component {
   render() {
     return (
     <>
-        <footer className="footer">
+        <footer className="footer" id = "contact">
             <div className="wrapper">
                 <div className="logo-box">
-                    <Link to="/">
-                        <img src={logo} className="logo" alt="logo" />
-                    </Link>
+                <Scrollchor to = "#main">
+                    <img src= {logo} className = "logo" alt="logo"/>
+                </Scrollchor>
                 </div>
                 <div className="footer-nav">
                     <h5>Navigation</h5>

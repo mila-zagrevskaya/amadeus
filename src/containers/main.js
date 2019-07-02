@@ -3,18 +3,15 @@ import React from "react";
 // import { Switch } from "react-router-dom";
 // import createHistory from "history/createBrowserHistory";
 
-// import { Link } from "react-router-dom";
-import Header from "../components/header";
+// import Header from "../components/header";
 import Title from "../components/title";
 import About from "./About-section";
 import Menu from "./menu-section";
 import Reserve from "./reserve";
 // import MyMap from "./map"
+import Fullmenu from "./full-menu";
 
 import Footer from "./footer"
-
-
-
 
 
 export default () => {
@@ -23,14 +20,14 @@ export default () => {
 			<div className="main">
 				<div className="container">
 					<div className="case" id="main">
-						<Header />
+						{/* <Header /> */}
 						<div className="wrapper">
-							<Title></Title>
+							<Title id = "main"></Title>
 						</div>
 					</div>
-					<div className="section-wrap">
+					<div className="section-wrap"  id="about">
 						<div className="wrapper">
-							<About id="about" title="About Amadeus Restaurant "
+							<About  title="About Amadeus Restaurant "
 								parag1="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis lorem nec enim tempus viverra condimentum eget dui.  Quisque ac ornare orci lacinia facilisis velit "
 								span="eget interdum ."
 								parag2="Quisque orci neque, euismod vitae turpis quis, accumsan iaculis velit. Nulla lacinia facilisis velit eget interdum."
@@ -40,9 +37,9 @@ export default () => {
 							></About>
 						</div>
 					</div>
-					<div className="section-menu">
+					<div className="section-menu" id = "menu">
 						<div className="wrapper">
-							<Menu id = "menu" title="Tasteful French Cuisine"
+							<Menu  title="Tasteful French Cuisine"
 								parag1="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis lorem nec enim tempus viverra condimentum eget dui.  Quisque ac ornare orci lacinia facilisis velit "
 								span="eget interdum ."
 								parag2="Quisque orci neque, euismod vitae turpis quis, accumsan iaculis velit. Nulla lacinia facilisis velit eget interdum."
@@ -51,19 +48,19 @@ export default () => {
 							></Menu>
 						</div>
 					</div>
-					<div className="section-wrap">
-						<div className="wrapper">
-							<Reserve></Reserve>
+					<div className="section-wrap" id = "events">
+						<div className="wrapper" id =  "reservations">
+							<Reserve />
 						</div>
 					</div>
-					<div className="section-menu">
-						<div className="wrapper">
-							{/* <MyMap></MyMap> */}
+					<div className="section-menu" >
+						<div className="wrapper" >
+							{/* <MyMap/> */}
+						<Fullmenu/>
 						</div>
 					</div>	
 				</div>
-
-				<Footer></Footer>
+				<Footer/>>
 			</div>
 			
 	</>

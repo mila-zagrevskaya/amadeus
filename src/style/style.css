@@ -37,19 +37,21 @@
   color: #ff6633;
 }
 
-
-
 .icon-calendar:before {
   content: "\f073";
+  top: 30%;
+  right: 20px;
 
 }
 .icon-tripadvisor:before {
   content: "\f262";
   left: 150px;
+  
 
 }
 .icon-clock:before {
   content: "\e94e";
+
 }
 .icon-user:before {
   content: "\e971";
@@ -84,14 +86,15 @@
     position: absolute;
 }
 
-.icon-user:before,
 .icon-calendar:before,
-.icon-clock:before,
-.icon-users:before {
+.icon-clock:before {
     color: #222222;
-    font-size: 30px;
-    top: 30%;
-    right: 20px;
-    width: 30px;
-    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 0;
 }
+
+

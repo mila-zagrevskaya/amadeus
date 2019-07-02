@@ -1,33 +1,24 @@
-export const INCREASE = "INCREASE";
-export const DECREASE = "DECREASE";
+// export const INCREASE = "INCREASE";
+// export const DECREASE = "DECREASE";
 
-export const REQUEST = "REQUEST";
-export const REQUEST_SUCCESS = "REQUEST_SUCCESS";
-export const REQUEST_FAIL = "REQUEST_FAIL";
-
-export const HANDLE_CHANGE_EVENT = "HANDLE_CHANGE_EVENT";
-export const RESET_FORM = "RESET_FORM";
-export const HANDLE_SUBMIT_EVENT = "HANDLE_SUBMIT_EVENT";
-export const REMOVE_ITEM = "REMOVE_ITEM";
-export const EDIT_ITEM = "EDIT_ITEM";
-export const SUBMIT_HANDLER_EDIT = "SUBMIT_HANDLER_EDIT";
-
-export const ADD_HOBBY = "ADD_HOBBY";
-export const REMOVE_HOBBY = "REMOVE_HOBBY";
-
-export const CHANGE_INPUT_VALUE = "CHANGE_INPUT_VALUE";
-export const RESET_POSTS_FORM = "RESET_POSTS_FORM";
-export const SHOW_EDIT_FORM = "SHOW_EDIT_FORM";
-export const CANCEL_UPDATE = "CANCEL_UPDATE";
+// export const REQUEST = "REQUEST";
+// export const REQUEST_SUCCESS = "REQUEST_SUCCESS";
+// export const REQUEST_FAIL = "REQUEST_FAIL";
 
 export const GET_REQUEST = "GET_REQUEST";
 export const GET_REQUEST_SUCCESS = "GET_REQUEST_SUCCESS";
 export const GET_REQUEST_FAIL = "GET_REQUEST_FAIL";
 
-export const POST_REQUEST = "POST_REQUEST";
-export const POST_REQUEST_SUCCESS = "POST_REQUEST_SUCCESS";
-export const POST_REQUEST_FAIL = "POST_REQUEST_FAIL";
+export const SHOW_MORE_INFO = "SHOW_MORE_INFO";
 
-export const REMOVE_REQUEST = "REMOVE_REQUEST";
-export const REMOVE_REQUEST_SUCCESS = "REMOVE_REQUEST_SUCCESS";
-export const REMOVE_REQUEST_FAIL = "REMOVE_REQUEST_FAIL";
+// export const HANDLE_CHANGE_EVENT = "HANDLE_CHANGE_EVENT";
+// export const RESET_FORM = "RESET_FORM";
+// export const HANDLE_SUBMIT_EVENT = "HANDLE_SUBMIT_EVENT";
+// export const REMOVE_ITEM = "REMOVE_ITEM";
+// export const EDIT_ITEM = "EDIT_ITEM";
+// export const SUBMIT_HANDLER_EDIT = "SUBMIT_HANDLER_EDIT";
+
+// export const CHANGE_INPUT_VALUE = "CHANGE_INPUT_VALUE";
+// export const RESET_POSTS_FORM = "RESET_POSTS_FORM";
+// export const CANCEL_UPDATE = "CANCEL_UPDATE";
+
