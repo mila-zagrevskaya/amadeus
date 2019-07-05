@@ -6,35 +6,31 @@ export default class Fullmenu extends React.Component {
 	constructor (props) {
         super(props) 
             this.state = {
+                partition: [ ],
                 item: [ ],
+                // data: [ ]
         }
     }
-    //   async  getData ( ) {
-    //     //   return 
-    //       let data =  await  ( await fetch ( "https://cors-anywhere.herokuapp.com/https://amadeus-restaurant.firebaseio.com/menu.json" ) )
-    //      console.log (data.Desserts  )
-    //       return data
-           
-    //     }
-
-     
-
         componentDidMount ( ) {
-            // this.getData ( ) 
-            fetch ( "https://cors-anywhere.herokuapp.com/https://amadeus-restaurant.firebaseio.com/menu" )
+            const data =  fetch ( "http://localhost:3000/menu" )
                 .then ( response => {
-                    response.json
-                    console.log ( "response" , response  )
-                    .then ( json => { 
-                        this.setState ( { item: json } )
-                        console.log ( "json" , json, this.state)
-                    } );                    
+                    response.json ()
+                    .then ( json => {   
+                        this.setState ( { item: json } )                                                    //пришел объект с массивами объектов
+                        for ( let section in json ) {
+                            // console.log (section)
+                            // console.log ( json [ section ] ) 
+                        }
+                       
+                        // console.log (this.state.item)      
+                       
+                    } );      
+                  
                 } )
+ } 
 
-        } 
+        // getID = id => console.log (id)
 
-        getID = id => console.log (id)
-          
     render () {
         const { item } = this.state;
         return (
@@ -54,6 +50,8 @@ export default class Fullmenu extends React.Component {
                         )
                     ) } */}
                 </ul>
+                
+                
             </div>                      
          ) 
     }

@@ -9,11 +9,11 @@ export default () => (
         <div className = "reserve-wrap">
             <div className = "cont">
                 <h4>Make a Reservation</h4>
-                <Form ></Form>
+                <Form />
             </div>
             <div className = "cont">
                 <h4>Upcoming Events</h4>
-                <EventsBlock></EventsBlock>
+                <EventsBlock/>
             </div>
         </div>
 

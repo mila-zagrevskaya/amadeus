@@ -1,8 +1,36 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { getPosts } from "../actions/remote";
+import React from "react";
+import {Link}  from "react-router-dom"
+// import { connect } from "react-redux";
+// import { getPosts, showMoreInfo } from "../actions/remote";
 
 import Button from "../components/button"
+
+
+export default ({ text, title, parag1, span, parag2, btnText, eventHandler, flag, ...rest }) => (
+    <div className="text-about">
+        <h2> {title}</h2>
+        <p>{ parag1} <span>{span}</span></p>
+        <p>{ parag2} </p>
+         {  flag ? <Link to = "/viewmenu" className="title-button more" > {btnText} </Link> : 
+             <Button className="title-button more" text={btnText} onClick= {eventHandler}/> }
+    </div>
+   
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -10,7 +38,8 @@ import Button from "../components/button"
 // 	state = { 
 //         overflow:  "hidden",
 //         title: "",
-//         text: ""
+//         text: "",
+//         postList: []
 //     };
 
 //     close = () => this.setState({ overflow:  "hidden" });
@@ -31,10 +60,13 @@ import Button from "../components/button"
        
 //         return (
 //             <div className = "text-about">
-//                 <h2> { this.state.title }</h2>
+//                 {
+//                     // console.log('get',this.props.getPosts());
+//                     console.log ( 'get', postList )
+//                     /* <h2> { this.state.title }</h2>
 //                 { postList.map ( ( el, index )=> {
 //                    <p key = { index } text = {el} >  </p>
-//                 } ) }
+//                 } ) } */}
 //                 <Button className="title-button more" text= "Show more ..." onClick= { showMoreInfo }/>
 // 			</div>                      
 //          ) 
@@ -44,8 +76,8 @@ import Button from "../components/button"
 
 // const mapStateToProps = state => {
 // 	return {
-//         postList: state.remote.postList,
-//         showMoreInfo: state.remote.showMoreInfo
+//         postList: state.remote,
+//         // showMoreInfo: state.remote.showMoreInfo
 // 	};
 // };
 
@@ -55,22 +87,7 @@ import Button from "../components/button"
 //         getPosts,
 //         showMoreInfo
 // 	}
-// )(Remote);
+// )(Description);
 
 
 
-
-
-
-
-
-
-export default ({ text, title, parag1, span, parag2, btnText, eventHandler, ...rest }) => (
-    <div className="text-about">
-        <h2> {title}</h2>
-        <p>{ parag1} <span>{span}</span></p>
-        <p>{ parag2} </p>
-        <Button className="title-button more" text={btnText} onClick= {eventHandler}/>
-    </div>
-   
-)

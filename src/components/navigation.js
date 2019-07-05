@@ -16,8 +16,8 @@ export default ( props ) => (
     <nav className=" nav">
 		<ul className=" list">
 			{liArr.map(el => (
-				<li className="item" key={el.id}>
-					<Scrollchor to={el.path}>{el.text}</Scrollchor>
+				<li className="item" key={el.id}> 
+					<Scrollchor to={el.path}>{el.text}</Scrollchor>  
 				</li>
 			) ) }
 		</ul>

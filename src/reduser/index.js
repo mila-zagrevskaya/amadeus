@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
-import remote_todo from "./remote-todo";
+import remote from "./remote";
 
 export default combineReducers({
-	remote_todo
+	remote
 });

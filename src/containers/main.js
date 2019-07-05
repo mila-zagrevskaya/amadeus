@@ -9,7 +9,7 @@ import About from "./About-section";
 import Menu from "./menu-section";
 import Reserve from "./reserve";
 // import MyMap from "./map"
-import Fullmenu from "./full-menu";
+// import Fullmenu from "./full-menu";
 
 import Footer from "./footer"
 
@@ -37,7 +37,7 @@ export default () => {
 							></About>
 						</div>
 					</div>
-					<div className="section-menu" id = "menu">
+					<div className="section-menu" id = "menu">					
 						<div className="wrapper">
 							<Menu  title="Tasteful French Cuisine"
 								parag1="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis lorem nec enim tempus viverra condimentum eget dui.  Quisque ac ornare orci lacinia facilisis velit "
@@ -56,13 +56,12 @@ export default () => {
 					<div className="section-menu" >
 						<div className="wrapper" >
 							{/* <MyMap/> */}
-						<Fullmenu/>
+						{/* <Fullmenu/> */}
 						</div>
 					</div>	
 				</div>
-				<Footer/>>
+				<Footer/>
 			</div>
-			
 	</>
 	);
 };

@@ -3,7 +3,9 @@ import axios from "axios";
 import * as types from "../actionTypes/actionTypes";
 
 
-const URL = "https://amadeus-restaurant.firebaseio.com/about";
+const URL = "http://localhost:3000/about";
+
+// "https://amadeus-restaurant.firebaseio.com/about"
 
 export const showMoreInfo = payload => ({
 	type: types.SHOW_MORE_INFO,
@@ -28,7 +30,7 @@ const getRequestFail = payload => ({
 export const getPosts = () => dispatch => {
 	dispatch(getRequest());
 	return axios
-		.get(URL + ".json")
+		.get(URL)
 		.then(res => dispatch(getRequestSuccess(res)))
 		.catch(err => dispatch(getRequestFail(err)));
 };

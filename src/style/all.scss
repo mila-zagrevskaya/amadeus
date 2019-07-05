@@ -139,13 +139,19 @@ h1{
 	}
 }
 .button-box {
+	display: flex;
 	margin: 60px auto 135px; 
+	.btn {
+		text-align: center;
+		padding-top: 13px;
+	}
 }
 .title-button {
 	height: 50px;
 	width: 160px;
 	color: $header-color;
 	text-transform: uppercase;
+	text-decoration: none;
 	letter-spacing: 0.05em;
 	font-size: 15px;
 	font-weight: bold;
@@ -168,7 +174,7 @@ h1{
 	}
 }
 
-// ________section  start
+// ________section 
 .section-wrap,
 .section-menu {
 	background-color: #f7f7f7;
@@ -256,6 +262,8 @@ h2 {
 .more {
 	align-self: flex-end;
 	margin: 35px 5px 50px;
+	padding: 15px 3px;
+    text-align: center;
 	@media (max-width: 768px) {
 		width: 85%;
 		margin: 25px auto;	
@@ -334,7 +342,7 @@ h4 {
 		background-color: #fff;
 	}
 	input[type=date]::-webkit-inner-spin-button,
-	input[type=time]::-webkit-inner-spin-button,
+	
 	input[type=number]::-webkit-inner-spin-button {
 		-webkit-appearance: none;
 		display: none;

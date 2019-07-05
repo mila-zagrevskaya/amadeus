@@ -18,37 +18,31 @@ export default class Form extends React.Component {
 			  comments: "",
 			  valid: false
 			}
-          this.handleChangeName = this.handleChangeName.bind(this)
-		  this.handleChangeDate = this.handleChangeDate.bind(this)
-		  this.handleChangeTime = this.handleChangeTime.bind(this)
-		  this.handleChangePeople = this.handleChangePeople.bind(this)
-		  this.handleChangeComments = this.handleChangeComments.bind(this)
-          this.validate = this.validate.bind(this)
 	  }  
 	      
-      handleChangeName(e) {
+      handleChangeName = (e)  => {
         this.setState({name: e.target.value})
         this.setState(this.validate)
       }
     
-      handleChangeDate(e) {
+      handleChangeDate = (e)  =>  {
         this.setState({date: e.target.value})
         this.setState(this.validate)
 	  }
-	  handleChangeTime(e) {
+	  handleChangeTime = (e)  =>  {
         this.setState({time: e.target.value})
         this.setState(this.validate)
 	  }
-	  handleChangePeople(e) {
+	  handleChangePeople = (e)  => {
         this.setState({people: e.target.value})
         this.setState(this.validate)
 	  }
-	  handleChangeComments(e) {
+	  handleChangeComments = (e)  => {
         this.setState({comments: e.target.value})
         this.setState(this.validate)
 	  }
     
-      validate(state) {
+      validate =  (state) => {
         return {
 		  valid: state.props === state.value
 		//   valid: state.value.length < 2
@@ -57,7 +51,7 @@ export default class Form extends React.Component {
     
       render(){
         return (
-			<form  >
+			<form  onSubmit = { event => event.preventDefault()}>
 				<Input value={ this.state.name }
 					onChange={ this.handleChangeName }
 					id="name"
@@ -97,9 +91,9 @@ export default class Form extends React.Component {
 					name="commensals"
 					label= "Commensals "
 				/>
-				<Button type="submit" text="Find a table" className ="title-button form-btn" 
+				<input type="submit" text="Find a table" className ="title-button form-btn"  
 				disabled = { ( this.state.name.length && this.state.date.length && this.state.time.length && this.state.people.length ) === 0 }/>
-			</form>
+			</form >
         )
       }
       

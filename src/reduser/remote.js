@@ -2,24 +2,17 @@ import * as types from "../actionTypes/actionTypes";
 
 const initialState = {
 	overflow:  "hidden",
-	postList: [],
+	postList: [ ],
 	text : ""
 };
 
-export default ( state = initialState, { type, payload } ) => {
-	switch ( type ) {
+export default ( state = initialState,  action ) => {
+	switch (action.type ) {
 		case types.GET_REQUEST: {
 			return state;
 		}
 		case types.GET_REQUEST_SUCCESS: {
-			const { data } = payload;
-			const postList = Object.keys ( data ).reduce ( ( prev, elem ) => {
-				return prev.concat ( {
-					...data[elem],
-					id: elem
-				} );
-			}, [ ] );
-			return { ...state, postList };
+			return {...state, postList: action.payload.data}
 		}
 		case types.GET_REQUEST_FAIL: {
 			return state;

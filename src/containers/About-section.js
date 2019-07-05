@@ -1,5 +1,4 @@
-import React, {Component} from "react";
-// import { Link } from "react-router-dom";
+import React  from "react";
 import Description from "../components/description"
 
 
@@ -25,7 +24,7 @@ export default ({ id, text, title, parag1, span, parag2, btnText, bigimg, eventH
 
     <div className="section" id = {id}>
         <div className = "top-box"> 
-            <Description  text = {text}  title = {title} parag1 = {parag1}  span = {span} parag2= {parag2} btnText = {btnText}></Description>
+            <Description  text = {text}  title = {title} parag1 = {parag1}  span = {span} parag2= {parag2} btnText = {btnText} ></Description> 
             <img src = {bigimg} className = "big-img" alt="Amadeus"/>
         </div>    
         <div className = "pictures-box">

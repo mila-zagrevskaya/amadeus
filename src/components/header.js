@@ -1,5 +1,6 @@
 import React from "react";
-import Scrollchor from 'react-scrollchor';
+// import Scrollchor from 'react-scrollchor';
+import {Link}  from "react-router-dom"
 import logo from "../assets/img/logo.png";
 import Navigation from "./navigation"
 
@@ -8,9 +9,9 @@ import Navigation from "./navigation"
 export default () => (
 	<header className="header">
 		<div className="logo-box">
-				<Scrollchor to = "#main">
+				<Link to = "/">
 					<img src= {logo} className = "logo" alt="logo"/>
-				</Scrollchor>
+				</Link>
 			</div>
 			<Navigation></Navigation>
 	</header>
